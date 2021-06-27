@@ -32,7 +32,7 @@ public class InfoCollege implements College {
 	@Override
 	public Iterator createIterator() {
 		// TODO Auto-generated method stub
-		return new InfoColleageIterator(departmentList);
+		return new InfoCollegeIterator(departmentList);
 	}
 
 }

@@ -3,14 +3,12 @@ package _17iterator;
 import java.util.Iterator;
 import java.util.List;
 
-public class InfoColleageIterator implements Iterator {
-
+public class InfoCollegeIterator implements Iterator {
 
 	List<Department> departmentList; // 信息工程学院是以List方式存放系
 	int index = -1;//索引
 
-
-	public InfoColleageIterator(List<Department> departmentList) {
+	public InfoCollegeIterator(List<Department> departmentList) {
 		this.departmentList = departmentList;
 	}
 
@@ -36,5 +34,4 @@ public class InfoColleageIterator implements Iterator {
 	public void remove() {
 
 	}
-
 }

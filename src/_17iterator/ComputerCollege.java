@@ -7,15 +7,12 @@ public class ComputerCollege implements College {
 	Department[] departments;//因为你要遍历你聚合来的类，所以你要为他写迭代器！！！！！！！！！
 	int numOfDepartment = 0 ;// 保存当前数组的对象个数
 
-
 	public ComputerCollege() {
 		departments = new Department[5];
 		addDepartment("Java专业", " Java专业 ");
 		addDepartment("PHP专业", " PHP专业 ");
 		addDepartment("大数据专业", " 大数据专业 ");
-
 	}
-
 
 	@Override
 	public String getName() {
@@ -36,5 +33,4 @@ public class ComputerCollege implements College {
 		// TODO Auto-generated method stub
 		return new ComputerCollegeIterator(departments);
 	}
-
 }

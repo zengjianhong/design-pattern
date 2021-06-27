@@ -13,5 +13,4 @@ public class Success extends Action {
 		// TODO Auto-generated method stub
 		System.out.println(" 女人给的评价该歌手很成功 !");
 	}
-
 }

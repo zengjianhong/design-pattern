@@ -22,5 +22,4 @@ public class BaiduSite implements Observer {
 		System.out.println("***百度网站 气压: " + pressure + "***");
 		System.out.println("***百度网站 湿度: " + humidity + "***");
 	}
-
 }

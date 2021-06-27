@@ -11,5 +11,4 @@ public class Woman extends Person{
 		// TODO Auto-generated method stub
 		action.getWomanResult(this);
 	}
-
 }

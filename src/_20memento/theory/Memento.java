@@ -1,6 +1,7 @@
 package _20memento.theory;
 
 public class Memento {
+
 	private String state;
 
 	//构造器
@@ -12,7 +13,4 @@ public class Memento {
 	public String getState() {
 		return state;
 	}
-	
-	
-	
 }

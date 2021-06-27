@@ -3,13 +3,11 @@ package _16visitor;
 public class Client {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		//创建ObjectStructure
 		ObjectStructure objectStructure = new ObjectStructure();
 
 		objectStructure.attach(new Man());
 		objectStructure.attach(new Woman());
-
 
 		//成功
 		Success success = new Success();
@@ -24,5 +22,4 @@ public class Client {
 		Wait wait = new Wait();
 		objectStructure.display(wait);
 	}
-
 }

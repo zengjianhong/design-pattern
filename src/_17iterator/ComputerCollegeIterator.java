@@ -36,5 +36,4 @@ public class ComputerCollegeIterator implements Iterator {
 	public void remove() {
 
 	}
-
 }

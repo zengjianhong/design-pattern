@@ -7,6 +7,7 @@ package _18observer;
  * 3. 当数据有更新时，就主动的调用   CurrentConditions对象update方法(含 display), 这样他们（接入方）就看到最新的信息
  */
 public class WeatherData {
+
 	private float temperatrue;
 	private float pressure;
 	private float humidity;

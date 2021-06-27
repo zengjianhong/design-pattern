@@ -4,6 +4,8 @@ package _18observer.improve;
 public interface Subject {
 
 	void registerObserver(Observer o);
+
 	void removeObserver(Observer o);
+
 	void notifyObservers();
 }

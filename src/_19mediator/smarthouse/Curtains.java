@@ -4,13 +4,11 @@ public class Curtains extends Colleague {
 
 	Curtains(Mediator mediator, String name) {
 		super(mediator, name);
-		// TODO Auto-generated constructor stub
 		mediator.register(name, this);
 	}
 
 	@Override
 	public void sendMessage(int stateChange) {
-		// TODO Auto-generated method stub
 		this.getMediator().getMessage(stateChange, this.name);
 	}
 

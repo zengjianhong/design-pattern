@@ -3,6 +3,7 @@ package _19mediator.smarthouse;
 public class Client {
 
 	public static void main(String[] args) {
+
 		//创建一个中介者对象
 		Mediator mediator = new ConcreteMediator();
 
@@ -21,5 +22,4 @@ public class Client {
 		coffeeMachine.finishCoffee();
 		alarm.sendAlarm(1);
 	}
-
 }

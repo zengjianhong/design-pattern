@@ -9,6 +9,7 @@ import java.util.ArrayList;
  * 3. 当数据有更新时，就主动的调用   ArrayList, 通知所有的（接入方）就看到最新的信息
  */
 public class WeatherData implements Subject {
+
 	private float temperature;
 	private float pressure;
 	private float humidity;

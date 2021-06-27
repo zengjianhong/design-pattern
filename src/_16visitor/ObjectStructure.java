@@ -13,6 +13,7 @@ public class ObjectStructure {
 	public void attach(Person p) {
 		persons.add(p);
 	}
+
 	//移除
 	public void detach(Person p) {
 		persons.remove(p);

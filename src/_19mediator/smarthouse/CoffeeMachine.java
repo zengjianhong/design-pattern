@@ -4,13 +4,11 @@ public class CoffeeMachine extends Colleague {
 
 	CoffeeMachine(Mediator mediator, String name) {
 		super(mediator, name);
-		// TODO Auto-generated constructor stub
 		mediator.register(name, this);
 	}
 
 	@Override
 	public void sendMessage(int stateChange) {
-		// TODO Auto-generated method stub
 		this.getMediator().getMessage(stateChange, this.name);
 	}
 
@@ -19,7 +17,6 @@ public class CoffeeMachine extends Colleague {
 	}
 
 	public void finishCoffee() {
-
 		System.out.println("After 5 minutes!");
 		System.out.println("Coffee is ok!");
 		sendMessage(0);
