@@ -12,9 +12,9 @@ public abstract class Colleague {
 
 	}
 
-	public Mediator GetMediator() {
+	public Mediator getMediator() {
 		return this.mediator;
 	}
 
-	public abstract void SendMessage(int stateChange);
+	public abstract void sendMessage(int stateChange);
 }

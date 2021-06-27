@@ -2,26 +2,26 @@ package _19mediator.smarthouse;
 
 public class CoffeeMachine extends Colleague {
 
-	public CoffeeMachine(Mediator mediator, String name) {
+	CoffeeMachine(Mediator mediator, String name) {
 		super(mediator, name);
 		// TODO Auto-generated constructor stub
-		mediator.Register(name, this);
+		mediator.register(name, this);
 	}
 
 	@Override
-	public void SendMessage(int stateChange) {
+	public void sendMessage(int stateChange) {
 		// TODO Auto-generated method stub
-		this.GetMediator().GetMessage(stateChange, this.name);
+		this.getMediator().getMessage(stateChange, this.name);
 	}
 
-	public void StartCoffee() {
+	public void startCoffee() {
 		System.out.println("It's time to startcoffee!");
 	}
 
-	public void FinishCoffee() {
+	public void finishCoffee() {
 
 		System.out.println("After 5 minutes!");
 		System.out.println("Coffee is ok!");
-		SendMessage(0);
+		sendMessage(0);
 	}
 }

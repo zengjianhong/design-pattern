@@ -1,6 +1,6 @@
 package _19mediator.smarthouse;
 
-public class ClientTest {
+public class Client {
 
 	public static void main(String[] args) {
 		//创建一个中介者对象
@@ -17,9 +17,9 @@ public class ClientTest {
 		TV tV = new TV(mediator, "TV");
 
 		//让闹钟发出消息
-		alarm.SendAlarm(0);
-		coffeeMachine.FinishCoffee();
-		alarm.SendAlarm(1);
+		alarm.sendAlarm(0);
+		coffeeMachine.finishCoffee();
+		alarm.sendAlarm(1);
 	}
 
 }
