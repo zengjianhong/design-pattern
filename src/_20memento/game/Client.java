@@ -22,7 +22,7 @@ public class Client {
 
 		gameRole.display();
 
-		System.out.println("大战后，使用备忘录对象恢复到站前");
+		System.out.println("大战后，使用备忘录对象恢复到大战前");
 
 		gameRole.recoverGameRoleFromMemento(caretaker.getMemento());
 		System.out.println("恢复后的状态");
