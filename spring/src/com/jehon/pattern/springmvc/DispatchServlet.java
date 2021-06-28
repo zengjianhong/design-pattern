@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DispatchServlet {
 
-	public static List<HandlerAdapter> handlerAdapters = new ArrayList<HandlerAdapter>();
+	public static List<HandlerAdapter> handlerAdapters = new ArrayList<>();
 
 	public DispatchServlet() {
 		handlerAdapters.add(new AnnotationHandlerAdapter());
@@ -14,7 +14,6 @@ public class DispatchServlet {
 	}
 
 	public void doDispatch() {
-
 		// 此处模拟SpringMVC从request取handler的对象，
 		// 适配器可以获取到希望的Controller
 		 HttpController controller = new HttpController();
@@ -24,7 +23,6 @@ public class DispatchServlet {
 		HandlerAdapter adapter = getHandler(controller);
 		// 通过适配器执行对应的controller对应方法
 		adapter.handle(controller);
-
 	}
 
 	public HandlerAdapter getHandler(Controller controller) {
@@ -40,5 +38,4 @@ public class DispatchServlet {
 	public static void main(String[] args) {
 		new DispatchServlet().doDispatch(); // http...
 	}
-
 }

@@ -2,9 +2,10 @@ package com.jehon.pattern.springmvc;
 
 ///定义一个Adapter接口 
 public interface HandlerAdapter {
-	public boolean supports(Object handler);
 
-	public void handle(Object handler);
+	boolean supports(Object handler);
+
+	void handle(Object handler);
 }
 
 // 多种适配器类
@@ -18,7 +19,6 @@ class SimpleHandlerAdapter implements HandlerAdapter {
 	public boolean supports(Object handler) {
 		return (handler instanceof SimpleController);
 	}
-
 }
 
 class HttpHandlerAdapter implements HandlerAdapter {
@@ -30,7 +30,6 @@ class HttpHandlerAdapter implements HandlerAdapter {
 	public boolean supports(Object handler) {
 		return (handler instanceof HttpController);
 	}
-
 }
 
 class AnnotationHandlerAdapter implements HandlerAdapter {
@@ -40,8 +39,6 @@ class AnnotationHandlerAdapter implements HandlerAdapter {
 	}
 
 	public boolean supports(Object handler) {
-
 		return (handler instanceof AnnotationController);
 	}
-
 }

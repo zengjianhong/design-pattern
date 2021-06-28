@@ -1,4 +1,4 @@
-package com.jehon.pattern.test;
+package test;
 
 import org.springframework.web.servlet.HandlerExecutionChain;
 import org.springframework.web.servlet.HandlerInterceptor;

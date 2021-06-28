@@ -1,4 +1,4 @@
-package com.jehon.pattern.test;
+package test;
 
 public class Command {
 
