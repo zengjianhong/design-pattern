@@ -18,5 +18,4 @@ public class Client {
 		departmentApprover.processRequest(purchaseRequest);
 		viceSchoolMasterApprover.processRequest(purchaseRequest);
 	}
-
 }
