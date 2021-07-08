@@ -2,6 +2,8 @@ package _16visitor;
 
 /**
  * @author jehon
+ *
+ * 观察者模式
  */
 public class Client {
 
