@@ -29,8 +29,3 @@
 访问者模式(Visitor Pattern)
 中介者模式(Mediator Pattern)
 解释器模式(Interpreter Pattern)
-
-作者：道道明明白白
-链接：https://www.jianshu.com/p/18fee11deac9
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
