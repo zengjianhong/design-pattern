@@ -1,6 +1,8 @@
 package _24responsibilitychain;
 
-
+/**
+ * @author jehon
+ */
 public class PurchaseRequest {
 
 	private int type = 0;

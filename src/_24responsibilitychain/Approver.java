@@ -1,5 +1,8 @@
 package _24responsibilitychain;
 
+/**
+ * @author jehon
+ */
 public abstract class Approver {
 
 	Approver approver;

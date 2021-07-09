@@ -1,5 +1,8 @@
 package _24responsibilitychain;
 
+/**
+ * @author jehon
+ */
 public class SchoolMasterApprover extends Approver {
 
 	public SchoolMasterApprover(String name) {
@@ -9,7 +12,7 @@ public class SchoolMasterApprover extends Approver {
 	@Override
 	public void processRequest(PurchaseRequest purchaseRequest) {
 		if(purchaseRequest.getPrice() > 30000) {
-			System.out.println(" ������ id= " + purchaseRequest.getId() + " �� " + this.name + " ����");
+			System.out.println(" 请求者id= " + purchaseRequest.getId() + " 被 " + this.name + " 处理");
 		}else {
 			approver.processRequest(purchaseRequest);
 		}

@@ -1,5 +1,8 @@
 package _24responsibilitychain;
 
+/**
+ * @author jehon
+ */
 public class ViceSchoolMasterApprover extends Approver {
 
 	public ViceSchoolMasterApprover(String name) {
